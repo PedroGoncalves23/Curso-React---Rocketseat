@@ -2,16 +2,24 @@ import styles from './Post.module.css'
 
 export function Post() {
     return (
-        <article>
+        <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img src="../img/ignite-logo.svg" alt="" />
-                    <div className={styles.info}>
-                        <strong>Nome</strong>
-                        <span>Cargo</span>
+                    <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/68444645?v=4" alt="" />
+                    <div className={styles.authorInfo}>
+                        <strong>Pedro Henrique</strong>
+                        <span>Web Developer</span>
                     </div>
                 </div>
+
+                <time title='Publicado em 11/05 13:00' dateTime=''>Publicado há 1h</time>
             </header>
+
+            <div className={styles.content}>
+                <p>Olá pessoal</p>
+                <p>Meu primeiro projeto em React, criado durante o curso da Rocketseat</p>
+                <p><a href="">#rocketseat #react #ignite</a></p>
+            </div>
         </article>
     )
 }
