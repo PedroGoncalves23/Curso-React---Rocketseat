@@ -20,6 +20,17 @@ export function Post() {
                 <p>Meu primeiro projeto em React, criado durante o curso da Rocketseat</p>
                 <p><a href="">#rocketseat #react #ignite</a></p>
             </div>
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+
+                <textarea
+                    placeholder='Deixe seu comentário aqui'
+                />
+
+                <footer><button className={styles.publicButton} type='submit'>Publicar</button></footer>
+            </form>
+
         </article>
     )
 }
