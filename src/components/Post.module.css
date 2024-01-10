@@ -1,0 +1,14 @@
+.author {
+    display: flex;
+    gap: 10px;
+}
+
+.author img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
